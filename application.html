@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Movies</title>
+    <link rel="stylesheet" href="app;ication.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Favorite Movies</h1>
+        <form id="movie-form">
+            <input type="text" id="movie-input" placeholder="Enter movie name" required>
+            <button type="submit">Add Movie</button>
+        </form>
+        <ul id="movie-list"></ul>
+    </div>
+    <template id="movie-template">
+        <li class="movie-item">
+            <span class="movie-name"></span>
+            <button class="remove-btn">Remove</button>
+        </li>
+    </template>
+    <script src="application.js"></script>
+</body>
+</html>
